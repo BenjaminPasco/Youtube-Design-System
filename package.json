@@ -6,7 +6,7 @@
   "scripts": {
     "start:frontend": "cd packages/frontend && yarn start",
     "start:frontend:dev": "cd packages/frontend && yarn dev",
-    "lint": "eslint packages/** --ext .js,.jsx,.ts,.tsx --fix",
+    "lint": "eslint packages/**/*.{js,jsx,ts,tsx} --fix",
     "format": "prettier --write packages/**/*.{js,jsx,ts,tsx,css,md,json}"
   },
   "dependencies": {
