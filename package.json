@@ -3,6 +3,10 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "start:frontend": "cd packages/frontend && yarn start",
+    "start:frontend:dev": "cd packages/frontend && yarn dev"
+  },
   "dependencies": {},
   "devDependencies": {
     "lerna": "^7.4.1"
