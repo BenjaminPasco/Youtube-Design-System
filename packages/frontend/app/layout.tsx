@@ -1,17 +1,22 @@
-import type { Metadata } from 'next';
-import '@radix-ui/themes/styles.css';
-import './global.css';
+'use client';
 
-export const metadata: Metadata = {};
+import './global.css';
+import { useState } from 'react';
+import Mode from '../contexts/Mode';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [mode, setMode] = useState<'light' | 'dark'>('light');
   return (
     <html lang="en">
-      <body style={{ margin: 0 }}>{children}</body>
+      <body className={mode}>
+        <Mode.Provider value={{ mode, setMode: (newMode) => setMode(newMode) }}>
+          {children}
+        </Mode.Provider>
+      </body>
     </html>
   );
 }
