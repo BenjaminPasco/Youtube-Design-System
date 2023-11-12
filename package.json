@@ -4,9 +4,10 @@
     "packages/*"
   ],
   "scripts": {
-    "start:frontend": "cd packages/frontend && yarn start",
-    "start:frontend:dev": "cd packages/frontend && yarn dev",
     "lint": "eslint packages/**/*.{js,jsx,ts,tsx} --fix",
+    "format": "prettier --write packages/**/*.{js,jsx,ts,tsx,css,md,json}",
+    "frontend:start": "cd packages/frontend && yarn start",
+    "frontend:start:dev": "cd packages/frontend && yarn dev",
     "mongodb:init": "node dist/scripts/initMongoDB.js",
     "mongodb:seed:mock:videos": "node dist/scripts/seedMockVideosMongoDb.js"
   },
