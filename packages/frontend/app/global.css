@@ -4,12 +4,28 @@ body {
 }
 
 :root {
-  --border-radius: 4px;
-  --font-size: 1rem;
-  --padding: 4px 8px;
-
   --black: #000000;
   --white: #ffffff;
+
+  --breakpoint: 768px;
+
+  --border-radius-0: 0px;
+  --border-radius-1: 4px;
+  --border-radius-2: 8px;
+  --border-radius-3: 12px;
+  --border-radius-4: 16px;
+
+  --font-size-0: 0rem;
+  --font-size-1: 0.5rem;
+  --font-size-2: 0.75rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.25rem;
+
+  --space-0: 0px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
 
   /* 10% */
   --accent-1: color(display-p3 1 0.941 0.941);
@@ -100,7 +116,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-BlackItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-BlackItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -110,7 +126,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-HeavyItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-HeavyItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -120,7 +136,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-LightItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-LightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
@@ -130,7 +146,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-Medium.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-Medium.woff') format('woff');
+    url('../public/fonts/SFProDisplay-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -140,7 +156,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-Bold.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-Bold.woff') format('woff');
+    url('../public/fonts/SFProDisplay-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -150,7 +166,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-Regular.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-Regular.woff') format('woff');
+    url('../public/fonts/SFProDisplay-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -160,7 +176,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -170,7 +186,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-ThinItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-ThinItalic.woff') format('woff');
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -180,7 +196,7 @@ body {
   font-family: 'SF Pro Display';
   src:
     url('../public/fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
-      url('../public/fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+    url('../public/fonts/SFProDisplay-UltralightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
