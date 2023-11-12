@@ -1,6 +1,13 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0px;
+  height: 100%;
+
   font-family: 'SF Pro Display Regular', sans-serif;
+
+  background-color: var(--primary-1);
 }
 
 :root {
