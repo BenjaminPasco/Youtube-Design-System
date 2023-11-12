@@ -34,6 +34,13 @@ body {
   --space-3: 12px;
   --space-4: 16px;
 
+  .no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   /* 10% */
   --accent-1: color(display-p3 1 0.941 0.941);
   --accent-2: color(display-p3 1 0.875 0.875);
