@@ -1,13 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "esnext",
-      "module": "esnext",
-      "strict": true,
-      "jsx": "preserve",
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
-    },
-    "exclude": ["node_modules"],
-    "include": ["**/*.ts", "**/*.tsx"]
-  }
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "CommonJS",
+    // "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "rootDir": "."
+  },
+  "exclude": ["node_modules", "packages"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
