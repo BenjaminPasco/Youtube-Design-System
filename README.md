@@ -45,6 +45,20 @@ or in dev mode
 yarn frontend:start:dev
 ```
 
+### Backend
+
+Start the backend
+
+```bash
+yarn backend:start
+```
+
+or in dev mode
+
+```bash
+yarn backend:start:dev
+```
+
 ### Mongo Database
 
 Build the container and run it:

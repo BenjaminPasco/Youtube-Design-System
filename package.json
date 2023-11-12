@@ -8,6 +8,8 @@
     "format": "prettier --write packages/**/*.{js,jsx,ts,tsx,css,md,json}",
     "frontend:start": "cd packages/frontend && yarn start",
     "frontend:start:dev": "cd packages/frontend && yarn dev",
+    "backend:start": "cd packages/backend && yarn start",
+    "backend:start:dev": "cd packages/backend && yarn start:dev",
     "mongodb:init": "node dist/scripts/initMongoDB.js",
     "mongodb:seed:mock:videos": "node dist/scripts/seedMockVideosMongoDb.js"
   },
