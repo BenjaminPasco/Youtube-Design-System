@@ -2,6 +2,7 @@
 
 import styled from '@emotion/styled';
 import Recommandation from '@/components/Recommandation';
+import { useAllVideos } from '@/hooks/videos';
 
 const LayoutContainer = styled.div`
   --recommendations-min-width: 300px;
@@ -57,11 +58,9 @@ const Padding = styled.div`
   padding: var(--space-2);
 `;
 
-const recommendations = Array.from({ length: 50 }, (value, index) => {
-  return <Recommandation key={index} />;
-});
-
 export default function page() {
+  const { data = [], isLoading, error } = useAllVideos();
+  console.log('data', data);
   return (
     <LayoutContainer>
       <LeftColumn className="videoContainer">
@@ -71,7 +70,14 @@ export default function page() {
         </Padding>
       </LeftColumn>
       <RecommandationsContainer className="recommendations">
-        <Padding>{recommendations}</Padding>
+        <Padding>
+          {data.map((recommendation) => (
+            <Recommandation
+              key={recommendation.id}
+              recommendation={recommendation}
+            />
+          ))}
+        </Padding>
       </RecommandationsContainer>
     </LayoutContainer>
   );
