@@ -10,8 +10,10 @@
     "frontend:start:dev": "cd packages/frontend && yarn dev",
     "backend:start": "cd packages/backend && yarn start",
     "backend:start:dev": "cd packages/backend && yarn start:dev",
-    "mongodb:init": "tsc ./scripts/initMongoDB.ts --outdir ./dist/scripts/ || node dist/scripts/initMongoDB.js",
-    "mongodb:seed:mock:videos": "tsc ./scripts/seedMockVideosMongoDb.ts --outdir ./dist/scripts/ || node dist/scripts/seedMockVideosMongoDb.js"
+    "mongodb:init": "tsc ./scripts/initMongoDB.ts --outdir ./dist/scripts/ && node dist/scripts/initMongoDB.js",
+    "mongodb:seed:mock:videos": "tsc ./scripts/seedMockVideosMongoDb.ts --outdir ./dist/scripts/ && node dist/scripts/seedMockVideosMongoDb.js",
+    "minio:init": "tsc ./scripts/initMinIO.ts --outdir ./dist/scripts/ && node dist/scripts/initMinIO.js",
+    "minio:seed:mock:videos": "tsc ./scripts/seedMockVideosMinIO.ts --outdir ./dist/scripts/ && node dist/scripts/seedMockVideosMinIO.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.8.0",
